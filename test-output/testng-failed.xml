@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Salesforce Automation]" guice-stage="DEVELOPMENT">
+  <test name="UserMenuDropDown(failed)">
+    <classes>
+      <class name="com.training.testcases.UserMenuDropDownTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="logout"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.training.testcases.UserMenuDropDownTest -->
+    </classes>
+  </test> <!-- UserMenuDropDown(failed) -->
+</suite> <!-- Failed suite [Salesforce Automation] -->

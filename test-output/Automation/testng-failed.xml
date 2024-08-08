@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation]" guice-stage="DEVELOPMENT">
+  <parameter name="username" value="admin123@gmail.com"/>
+  <test name="login(failed)">
+    <classes>
+      <class name="com.training.testcases.LoginTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="loginerrormessage"/>
+        </methods>
+      </class> <!-- com.training.testcases.LoginTest -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [Automation] -->

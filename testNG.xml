@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="Salesforce Automation">
+
+<!-- <test name="SFDClogin">
+  <classes>
+   <class name = "com.training.testcases.LoginTest"/>
+  </classes>
+</test> -->
+
+<test name="UserMenuDropDown">
+  <classes>
+   <class name = "com.training.testcases.UserMenuDropDownTest"/>
+  </classes>
+</test>
+
+<!-- <test name="Accounts">
+  <classes>
+   <class name = "com.training.testcases.CreateAccountTest"/>
+  </classes>
+</test>
+
+<test name="Opportunity">
+  <classes>
+   <class name = "com.training.testcases.OpportunityTest"/>
+  </classes>
+</test>
+
+<test name="Leads">
+  <classes>
+   <class name = "com.training.testcases.LeadsTest"/>
+  </classes>
+</test>
+
+<test name="Contacts">
+  <classes>
+   <class name = "com.training.testcases.ContactsTest"/>
+  </classes>
+</test>
+
+<test name="Random">
+  <classes>
+   <class name = "com.training.testcases.RandomTest"/>
+  </classes>
+</test> -->
+
+</suite>
