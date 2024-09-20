@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Salesforce Automation]" guice-stage="DEVELOPMENT">
-  <test name="UserMenuDropDown(failed)">
+<suite thread-count="2" parallel="methods" name="Failed suite [Salesforce Automation]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="ZXasqw1#"/>
+  <parameter name="username" value="savi@enexus.com"/>
+  <listeners>
+    <listener class-name="com.training.listeners.TestListener"/>
+  </listeners>
+  <test parallel="methods" name="SFDClogin(failed)">
     <classes>
-      <class name="com.training.testcases.UserMenuDropDownTest">
+      <class name="com.training.testcases.LoginTest">
         <methods>
+          <include name="teardown"/>
           <include name="beforeMethod"/>
-          <include name="logout"/>
-          <include name="afterMethod"/>
+          <include name="loginsuccess"/>
         </methods>
-      </class> <!-- com.training.testcases.UserMenuDropDownTest -->
+      </class> <!-- com.training.testcases.LoginTest -->
     </classes>
-  </test> <!-- UserMenuDropDown(failed) -->
+  </test> <!-- SFDClogin(failed) -->
 </suite> <!-- Failed suite [Salesforce Automation] -->

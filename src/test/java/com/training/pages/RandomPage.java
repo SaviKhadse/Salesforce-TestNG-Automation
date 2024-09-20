@@ -89,6 +89,7 @@ public class RandomPage extends BasePage{
 	public void clickSave() {
 		savebutton.click();
 	}
+	
 	@FindBy(id="userNavLabel")
 	WebElement usermenu;
 	public void clickUsermenu() {

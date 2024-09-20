@@ -30,11 +30,11 @@ public class BasePage {
 		driver.switchTo().defaultContent();
 	}
 	
-//	public void waitforElement(WebElement element) {
-//
-//		WebDriverWait wait = new WebDriverWait(driver, 10);
-//		wait.until(ExpectedConditions.visibilityOf(element));
-//		
-//	}
+	public void waitforElement(WebElement element) {
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(element));
+		
+	}
 	
 }

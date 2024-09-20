@@ -92,17 +92,6 @@ public class ContactsPage extends BasePage{
 	public void saveNnew() {
 		saveAndnew.click();	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 }

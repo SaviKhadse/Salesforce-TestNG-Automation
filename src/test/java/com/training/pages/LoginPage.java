@@ -11,12 +11,12 @@ import com.training.base.BasePage;
 public class LoginPage extends BasePage{
 //	WebDriver driver;
 	
-	@FindBy(id="username")
-	WebElement username;
-	
 	public LoginPage(WebDriver driver) { 
 		super(driver);
 	}
+	
+	@FindBy(id="username")
+	WebElement username;
 	
 	public void enterusername() {
 		username.sendKeys("savi@enexus.com");

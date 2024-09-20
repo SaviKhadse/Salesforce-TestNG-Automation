@@ -30,7 +30,7 @@ public class ScreenshotUtility {
 		try {
 			FileUtils.copyFile(scrFile, destFile);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		

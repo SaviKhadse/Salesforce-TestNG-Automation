@@ -155,6 +155,7 @@ public class CreateAccountPage extends BasePage{
 	public void clickMergeAcc() {
 		merge.click();
 	}
+	
 //	TC14 Create account report
 	@FindBy(xpath="//a[contains(text(),'Accounts with last')]")
 	WebElement accwithlast;

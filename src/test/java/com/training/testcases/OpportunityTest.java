@@ -1,5 +1,6 @@
 package com.training.testcases;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -8,11 +9,13 @@ import org.testng.annotations.Test;
 import com.training.base.BaseTest;
 import com.training.pages.OpportunityPage;
 import com.training.pages.LoginPage;
+import com.training.utilities.PropertiesFile;
 import com.training.utilities.ScreenshotUtility;
 
 public class OpportunityTest extends BaseTest {
 	WebDriver driver;
 	OpportunityPage OpportunityPage;
+	PropertiesFile properties;
 	LoginPage loginpage;
 	
 	ScreenshotUtility screenshot= new ScreenshotUtility();
@@ -22,11 +25,12 @@ public class OpportunityTest extends BaseTest {
 	public void beforeMethod() {
 		
 		driver = getDriver();
-//		properties= new PropertiesFile();
-//		String url = properties.getProperties("url");
-		driver.get("https://login.salesforce.com");
+		properties= new PropertiesFile();
+		String url = properties.getProperties("url");
+		driver.get(url);
 		loginpage = new LoginPage(driver);
 		OpportunityPage = new OpportunityPage(driver);
+		DOMConfigurator.configure("log4j.xml");
 		}
 	
 	@Test(priority=16, description="opportunities drop down")
@@ -97,10 +101,10 @@ public class OpportunityTest extends BaseTest {
 	
 	
 	@AfterMethod
-    public void afterMethod() {
-		screenshot.takescreenshot(driver);
-	   driver.close();
-	   driver=null;
+    public void teardown() {
+	screenshot.takescreenshot(driver);
+	close();
+	  
    }
 	
 }

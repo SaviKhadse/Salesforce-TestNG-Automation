@@ -1,5 +1,6 @@
 package com.training.testcases;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -7,6 +8,7 @@ import org.testng.annotations.Test;
 import com.training.base.BaseTest;
 import com.training.pages.LoginPage;
 import com.training.pages.UserMenuDropDownPage;
+import com.training.utilities.PropertiesFile;
 //import com.training.utilities.PropertiesFile;
 import com.training.utilities.ScreenshotUtility;
 
@@ -14,6 +16,7 @@ import com.training.utilities.ScreenshotUtility;
 public class UserMenuDropDownTest extends BaseTest{
 	WebDriver driver;
 	UserMenuDropDownPage UserMenuDropDownPage;
+	PropertiesFile properties;
 	LoginPage loginpage;
 	ScreenshotUtility screenshot= new ScreenshotUtility();
 	
@@ -21,10 +24,13 @@ public class UserMenuDropDownTest extends BaseTest{
 	public void beforeMethod() {
 		
 		driver = getDriver();
-
-		driver.get("https://login.salesforce.com");
+		properties= new PropertiesFile();
+		String url = properties.getProperties("url");
+		driver.get(url);
 		loginpage = new LoginPage(driver);
+	
 		UserMenuDropDownPage = new UserMenuDropDownPage(driver);
+		DOMConfigurator.configure("log4j.xml");
 		}
 	
 //	@Test(priority=6, description="TC05 Select user menu for <username> drop down")
@@ -121,10 +127,10 @@ public class UserMenuDropDownTest extends BaseTest{
 	}
 	
 	@AfterMethod
-    public void afterMethod() {
-		screenshot.takescreenshot(driver);
-	   driver.close();
-	   driver=null;
+    public void teardown() {
+	screenshot.takescreenshot(driver);
+	close();
+	  
    }
 	
 	

@@ -25,9 +25,9 @@ public class BaseTest {
 	
 	
 	
-//	public void close() {
-//		driver.close();
-//		driver=null;
-//	}
+	public void close() {
+		driver.close();
+		driver=null;
+	}
 
 }

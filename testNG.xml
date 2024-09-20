@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name ="Salesforce Automation">
+<suite name ="Salesforce Automation" parallel="methods" thread-count="2">
 
-<!-- <test name="SFDClogin">
+<parameter name="username" value="savi@enexus.com"></parameter>
+<parameter name="password" value="ZXasqw1#"></parameter>
+
+<listeners>
+<listener class-name="com.training.listeners.TestListener"></listener>
+</listeners>
+
+<test name="SFDClogin">
   <classes>
    <class name = "com.training.testcases.LoginTest"/>
   </classes>
-</test> -->
+</test>
 
-<test name="UserMenuDropDown">
+<!-- <test name="UserMenuDropDown">
   <classes>
    <class name = "com.training.testcases.UserMenuDropDownTest"/>
   </classes>
-</test>
+</test>  -->
 
 <!-- <test name="Accounts">
   <classes>
