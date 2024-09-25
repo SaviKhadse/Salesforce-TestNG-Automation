@@ -58,33 +58,33 @@ public class LoginTest extends BaseTest{
 		Thread.sleep(2000);	
 	}
 	
-//	@Test(priority=3, description="Check RemeberMe - 3")
-//	@Parameters({"username", "password"})
-//	public void rememberMe() throws InterruptedException {
-//		loginpage.enterusername();
-//		loginpage.validpassword();
-//		loginpage.clickrememberme();
-//		loginpage.clicklogin();
-//		Thread.sleep(2000);
-//		loginpage.userdropdown();
-//		loginpage.logout();
-//		
-//	}
-//	
-//	@Test(priority=4,description="Forgot Password- 4 A")
-//	@Parameters({"username"})
-//	public void forgotpassword() {
-//		loginpage.forgotPassword();
-//		loginpage.provideUsername();
-//		loginpage.clickContinue();
-//	}
-//	
-//	@Test(priority=5,description="Forgot Password- 4 B")
-//	@Parameters({"username", "password"})
-//	public void wrongCred() {
-//		loginpage.enterInvalidusername();
-//		loginpage.clicklogin();
-//	}
+	@Test(priority=3, description="Check RemeberMe - 3")
+	@Parameters({"username", "password"})
+	public void rememberMe() throws InterruptedException {
+		loginpage.enterusername();
+		loginpage.validpassword();
+		loginpage.clickrememberme();
+		loginpage.clicklogin();
+		Thread.sleep(2000);
+		loginpage.userdropdown();
+		loginpage.logout();
+		
+	}
+	
+	@Test(priority=4,description="Forgot Password- 4 A")
+	@Parameters({"username"})
+	public void forgotpassword() {
+		loginpage.forgotPassword();
+		loginpage.provideUsername();
+		loginpage.clickContinue();
+	}
+	
+	@Test(priority=5,description="Forgot Password- 4 B")
+	@Parameters({"username", "password"})
+	public void wrongCred() {
+		loginpage.enterInvalidusername();
+		loginpage.clicklogin();
+	}
 
 	@AfterMethod
 	    public void teardown() {

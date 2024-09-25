@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Salesforce_Automation" class="navigator-link">
-              <span class="suite-name border-failed">Salesforce Automation</span>
+              <span class="suite-name border-passed">Salesforce Automation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Salesforce_Automation" class="hide-methods failed suite-Salesforce_Automation"> (hide)</a> <!-- hide-methods failed suite-Salesforce_Automation -->
-                      <a href="#" panel-name="suite-Salesforce_Automation" class="show-methods failed suite-Salesforce_Automation"> (show)</a> <!-- show-methods failed suite-Salesforce_Automation -->
-                    </span>
-                    <div class="method-list-content failed suite-Salesforce_Automation">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Salesforce_Automation" title="com.training.testcases.LoginTest" class="method navigator-link" hash-for-method="loginsuccess">loginsuccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Salesforce_Automation -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +102,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Salesforce_Automation" title="com.training.testcases.LoginTest" class="method navigator-link" hash-for-method="loginerrormessage">loginerrormessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Salesforce_Automation" title="com.training.testcases.LoginTest" class="method navigator-link" hash-for-method="loginsuccess">loginsuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Salesforce_Automation -->
@@ -130,48 +121,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Salesforce_Automation" class="panel Salesforce_Automation">
-          <div class="suite-Salesforce_Automation-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.training.testcases.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginsuccess">
-                  </a> <!-- loginsuccess -->
-                  <span class="method-name">loginsuccess</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=128.0.6613.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Savitas-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:c15:cb48:19a4:927f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: /var/folders/67/36h7v97x5yl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 74949e90839a0f269792de43caa7dd35
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.training.pages.LoginPage.clicklogin(LoginPage.java:40)
-	at com.training.testcases.LoginTest.loginsuccess(LoginTest.java:57)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 19 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-( TC02 Login To SalesForce -2)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Salesforce_Automation-class-failed -->
           <div class="suite-Salesforce_Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -187,6 +136,15 @@ Session ID: 74949e90839a0f269792de43caa7dd35
 (TC 01 Login Error Message - 1)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginsuccess">
+                  </a> <!-- loginsuccess -->
+                  <span class="method-name">loginsuccess</span>
+                  <em>
+( TC02 Login To SalesForce -2)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Salesforce_Automation-class-passed -->
         </div> <!-- panel Salesforce_Automation -->
@@ -198,7 +156,7 @@ Session ID: 74949e90839a0f269792de43caa7dd35
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Salesforce Automation&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Salesforce Automation&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;password&quot; value=&quot;ZXasqw1#&quot;/&gt;
   &lt;parameter name=&quot;username&quot; value=&quot;savi@enexus.com&quot;/&gt;
   &lt;listeners&gt;
@@ -250,16 +208,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginsuccess')
 data.setCell(0, 2, 'com.training.testcases.LoginTest')
-data.setCell(0, 3, 64668);
+data.setCell(0, 3, 35899);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginerrormessage')
 data.setCell(1, 2, 'com.training.testcases.LoginTest')
-data.setCell(1, 3, 60815);
+data.setCell(1, 3, 30697);
 window.suiteTableData['Salesforce_Automation']= { tableData: data, tableDiv: 'times-div-Salesforce_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Salesforce_Automation">
               </div> <!-- times-div-Salesforce_Automation -->
             </div> <!-- times-div -->
@@ -290,25 +248,25 @@ return data;
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginsuccess</span>
-                <span class="method-start">15206 ms</span>
-              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginerrormessage</span>
-                <span class="method-start">15609 ms</span>
+                <span class="method-start">12779 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">76621 ms</span>
+                <span class="method-start">43509 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">45022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginsuccess</span>
+                <span class="method-start">54364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">90278 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
